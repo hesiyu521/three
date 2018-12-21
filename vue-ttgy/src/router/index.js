@@ -7,6 +7,7 @@ import Home from 'pages/Home/Home'
 import Categray from 'pages/Categray/Categray'
 import My from 'pages/My/My'
 import Shopcar from 'pages/Shopcar/Shopcar'
+import Login from 'pages/Login/Login'
 
 export default new Router({
   routes: [
@@ -25,12 +26,16 @@ export default new Router({
     },
     {
       path:'/my',
-      component:My
+      component:Login
     },
     {
       path:'/shopcar',
       component:Shopcar
+    },
+    {
+      path:'/login',
+      component:Login
     }
-    
+
   ]
 })

@@ -1,6 +1,6 @@
 <template>
   <div id='home'>
-   Home
+   {{homes}}
    <TabBar></TabBar>
   </div>
 </template>
@@ -12,6 +12,7 @@ export default {
   components:{TabBar},
   data () {
     return {
+      homes:"home",
       msg: 'Welcome to Your Vue.js App'
     }
   }
