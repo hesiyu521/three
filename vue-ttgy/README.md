@@ -1,6 +1,6 @@
-# test
+# vue-lssf
 
-> A Vue.js project
+> Vue项目之《零食商贩》
 
 ## Build Setup
 

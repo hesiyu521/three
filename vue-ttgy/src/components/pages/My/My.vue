@@ -1,16 +1,15 @@
 <template>
-  <div id='home'>
-    <Header title="个人中心"></Header>
-   <TabBar></TabBar>
+  <div id='my'>
+My
+<TabBar></TabBar>
   </div>
 </template>
 
 <script>
-import Header from 'common/Header'
 import TabBar from 'common/TabBar'
 export default {
-  name: 'Home123',
-  components:{TabBar,Header},
+  name: 'My',
+  components:{TabBar},
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
@@ -21,5 +20,10 @@ export default {
 
 
 <style scoped lang="less">
+@import url('../../../style/main.less');
 
+#my{
+  .fs(100);
+  background:rgb(23, 196, 101);
+}
 </style>

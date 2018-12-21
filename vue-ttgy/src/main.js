@@ -1,28 +1,18 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
-import Vue from 'vue'
-//等同于 <script src='./base/vue.js'>
+import Vue from 'vue'//导入Vue框架插件
+import App from './App'//导入App.vue组件
+import router from './router'//导入路由（index.js）
 import Axios from 'axios'
-import router from './router'
-import reset from './style/reset.less' //无视文件类型都是模块
-import App from './App'
-Vue.config.productionTip = false
-//响应拦截器
-Axios.interceptors.response.use(function (response) {
-	console.log('响应拦截器')
-	console.log(response)
-    // Do something with response data
-    return response.data;
-  }, function (error) {
-    // Do something with response error
-    return Promise.reject(error);
-  });
-Vue.prototype.$axios=Axios//挂载到原型链上，不用再每次都导入axios
+import reset from './style/reset.less'
+
+Vue.config.productionTip = false//响应拦截器
+Vue.prototype.$axios=Axios;
+
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  router,
-  components: { App},
+  el: '#app',//选中作用域（根目录的index.html）
+  router,//使用路由中的组件
+  components: { App },//注册组件
   template: '<App/>'
-
 })

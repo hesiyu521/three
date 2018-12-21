@@ -1,14 +1,14 @@
 <template>
-  <div id='home'>
-	 这里是购物车界面
-   <TabBar></TabBar>
+  <div id='shopcar'>
+	 Shopcar
+     <TabBar></TabBar>
   </div>
 </template>
 
 <script>
 import TabBar from 'common/TabBar'
 export default {
-  name: 'Home',
+  name: 'Shopcaar',
   components:{TabBar},
   data () {
     return {
@@ -20,5 +20,10 @@ export default {
 
 
 <style scoped lang="less">
+@import url('../../../style/main.less');
 
+#shopcar{
+  .fs(100);
+  background:rgb(73, 96, 202);
+}
 </style>

@@ -1,4 +1,3 @@
-
 <template>
   <ul id='tabbar'>
      <router-link 
@@ -26,7 +25,7 @@ export default {
   		navlist:[{path:'/home',title:'首页',icon:''},
   		{path:'/categray',title:'分类',icon:''},
   		{path:'/shopcar',title:'购物车',icon:''},
-  		{path:'/my',title:'我的',icon:''}]
+  		{path:'/my',title:'我的果园',icon:''}]
   	}
   }
 }
@@ -37,18 +36,19 @@ export default {
 @import url('../../style/main.less');
 
 #tabbar{
+    border-top: 1px solid #ccc;
 	position: fixed;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	display: flex;
-	.h(60);
-	.fs(16);
+	.h(160);
+	.fs(32);
 	background: @tabBg;
 	li{
       width: 25%;
       text-align:center;
-      .lh(60);
+      .lh(160);
       color:@tabColor;
 
 	}

@@ -10,18 +10,8 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {//配置服务器代理
-        '/test':{
-            target:'http://127.0.0.1:3000',//代理目标
-            changeOrigin:true,//是否允许跨域
-            pathRewrite:{ '^/test':''} //请求的时候把test小暗号去掉
-        },
-        '/api':{
-            target:'http://localost:3000',//代理目标
-            changeOrigin:true,//是否允许跨域
-            pathRewrite:{ '^/api':''} //请求的时候把test小暗号去掉(正则)
-        }
-    },
+    proxyTable: {},
+
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
     port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
@@ -30,14 +20,7 @@ module.exports = {
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
 
-    // Use Eslint Loader?
-    // If true, your code will be linted during bundling and
-    // linting errors and warnings will be shown in the console.
-    useEslint: false,
-    // If true, eslint errors and warnings will also be shown in the error overlay
-    // in the browser.
-    showEslintErrorsInOverlay: false,
-
+    
     /**
      * Source Maps
      */
