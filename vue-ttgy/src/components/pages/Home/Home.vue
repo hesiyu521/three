@@ -1,6 +1,6 @@
 <template>
   <div id='home'>
-   {{homes}}
+   Home
    <TabBar></TabBar>
   </div>
 </template>

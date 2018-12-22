@@ -1,11 +1,11 @@
 <template>
   <ul id='tabbar'>
      <router-link
-     :to="item.path"
+		 v-for='(item ,index) in navlist'
+     :to='item.path'
      tag='li'
-	 v-for='(item ,index) in navlist'
-	 :key='index'
-	 active-class='sel'
+	 	 :key='index'
+	 	 active-class='sel'
      >
       <i :class="item.icon"></i>
        <br>
